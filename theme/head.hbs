@@ -1,0 +1,40 @@
+<!-- SEO Meta Tags -->
+<meta name="description" content="Your book description goes here.">
+<meta name="keywords" content="mdBook, documentation, guide, SEO, static site">
+<meta name="author" content="{{ author }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="A well-structured book powered by mdBook.">
+<meta property="og:image" content="/path-to-your-image.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ config.book.url }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="Your book description.">
+<meta name="twitter:image" content="/path-to-your-image.jpg">
+
+<!-- JSON-LD Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "{{ title }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ authors }}"
+  },
+  "description": "Your book description goes here.",
+  "url": "{{ config.book.url }}",
+  "image": "/path-to-your-image.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Your Publishing Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/path-to-your-logo.jpg"
+    }
+  },
+  "datePublished": "2025-02-27",
+  "inLanguage": "en",
+  "keywords": "mdBook, documentation, SEO, structured data"
+}
+</script>
